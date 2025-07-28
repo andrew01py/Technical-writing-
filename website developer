@@ -1,0 +1,229 @@
+andrew-kunda-portfolio/
+├── index.html          # Home/About page
+├── education.html      # Education background
+├── projects.html       # Projects showcase
+├── blog.html           # Blog section
+├── contact.html        # Contact page
+├── css/
+│   └── style.css       # Main stylesheet
+├── images/             # For all your images
+└── assets/
+    └── cv.pdf          # Your downloadable CV
+<a href=" assets/cv.pdf" download
+="Andrew-Kunda-CV.pdf" class="bt
+n">Download my CV</a>
+
+
+
+
+## HTML Structure (index.html - About Page)
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Kunda Yusuf | Web Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Andrew Kunda Yusuf</h1>
+            <h2>Web Developer</h2>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My ambition is to grow in tech community to help me build my professionalism in the digital globe. The digital advancement is what really motivates me.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span>HTML</span>
+                <div class="skill-level beginner">Beginner</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Andrew Kunda Yusuf</p>
+    </footer>
+</body>
+</html>
+
+
+## CSS Structure (style.css)
+css
+/* Base Styles */
+:root {
+    --primary: #1a237e; /* Dark blue */
+    --secondary: #ffd600; /* Yellow */
+    --dark-bg: #121212;
+    --text-light: #f5f5f5;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: var(--text-light);
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+}
+
+h2 {
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.5rem;
+}
+
+/* Skills */
+.skill {
+    margin: 1rem 0;
+}
+
+.skill-level {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.beginner {
+    background-color: #4caf50;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+
+## Other Pages
+
+1. *education.html*:
+html
+<!-- Similar structure to index.html -->
+<section class="education">
+    <h2>Educational Background</h2>
+    <div class="degree">
+        <h3>Bachelor of Education Science</h3>
+        <p>Kenyatta University</p>
+        <p>Prospective Graduate</p>
+    </div>
+    <a href="assets/cv.pdf" download class="btn">Download My CV</a>
+</section>
+
+
+2. *projects.html*:
+html
+<section class="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Website Development</h3>
+        <p>Built with HTML</p>
+        <a href="https://github.com/andrew01py" class="btn">View on GitHub</a>
+    </div>
+</section>
+
+
+3. *blog.html*:
+html
+<section class="blog">
+    <h2>My Blog</h2>
+    <article>
+        <h3>Software Development</h3>
+        <p>My thoughts on software development...</p>
+    </article>
+    <article>
+        <h3>Curriculum Planning</h3>
+        <p>Insights about curriculum development...</p>
+    </article>
+</section>
+
+
+4. *contact.html*:
+html
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div class="social">
+        <a href="https://github.com/andrew01py">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+    </div>
+</section>
+Initialize local repository
+git init
+Add all files
+git add
+commit changes 
+gitcommit -m "Initial Portfolio setup"
